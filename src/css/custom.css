@@ -23,22 +23,30 @@
   --ifm-footer-link-color: #25272A;
   --ifm-footer-copy-right-color: #B6BABF;
   --ifm-footer-title-color: #84909A;
+  --ifm-body-color: #000;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"]:root {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-hover-overlay: #262626;
-  --ifm-background-color: #000000;
-  --ifm-navbar-background-color: #000000;
+  --ifm-background-color: #000;
+  --ifm-navbar-background-color: #000;
   --ifm-footer-background-color: #151718;
   --ifm-table-background: #151718;
   --ifm-table-head-background:  #151718;
   --ifm-table-border-color: #262626;
   --prism-background-color: #151718;
   --ifm-color-gray-700: var(--ifm-toc-border-color);
-  --ifm-footer-link-color: #FFF;
-  --ifm-footer-title-color: #FFF;
+  --ifm-footer-link-color: #e3e3e3;
+  --ifm-footer-title-color: #e3e3e3;
+  --ifm-body-color: #e3e3e3;
+}
+
+body {
+  color: var(--ifm-body-color);
+  font-family: unset;
+  font-size: 16px;
 }
 
 .align-center {
